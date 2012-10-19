@@ -1,0 +1,16 @@
+#! /bin/sh
+NAME=tmp.$$
+NAME2=tmp2.$$
+
+curl http://www.city.kyoto.jp/kotsu/busdia/hyperdia/mnukana.htm > $NAME
+grep a.htm $NAME > $NAME2
+pickupKana < $NAME2 > $NAME
+sh $NAME
+grep menu *.htm > $NAME2
+rm -f *.htm
+pickupHtml < $NAME2 > output.log
+sh $NAME
+
+rm -f $NAME
+rm -f $NAME2
+

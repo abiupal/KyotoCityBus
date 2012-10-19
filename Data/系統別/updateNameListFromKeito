@@ -1,0 +1,13 @@
+#! /bin/sh
+NAME=tmp.$$
+NAME2=tmp2.$$
+
+curl http://www.city.kyoto.jp/kotsu/busdia/keitou/keitou.htm > $NAME
+
+pickupKeito < $NAME > $NAME2
+sh $NAME2
+
+rm -f R.htm CK.htm
+sh pickupDataFromHTML `ls *.htm`
+rm -f ./*.htm
+

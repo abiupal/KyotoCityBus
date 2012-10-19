@@ -1,0 +1,19 @@
+How to make kanjikana.sqlite
+
+# sqlite3 kanjikana.sqlite <Enter>
+
+sqlite> .schema
+CREATE TABLE kanjikana(html TEXT, kana TEXT, kanji TEXT);
+sqlite> .separator ,
+sqlite> .show
+     echo: off
+  explain: off
+  headers: off
+     mode: list
+nullvalue: ""
+   output: stdout
+separator: ","
+    stats: off
+    width: 
+sqlite> .import /Users/kenji/Desktop/KyotoCityBus/読みがな/output.log kanjikana
+sqlite> select * from kanjikana;

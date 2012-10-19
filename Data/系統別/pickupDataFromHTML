@@ -1,0 +1,8 @@
+#!/bin/sh
+
+rm -f ./keito.list
+for i in $*
+do
+    pickupKeitoList < $i >> keito.list
+done
+

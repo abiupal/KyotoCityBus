@@ -1,0 +1,541 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BA00DB551626318200A1045A /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BA00DB541626318200A1045A /* Icon.png */; };
+		BA00DB571626318F00A1045A /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BA00DB561626318F00A1045A /* Icon@2x.png */; };
+		BA22CC67157F53250037BFF4 /* pickupBusController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA22CC66157F53250037BFF4 /* pickupBusController.m */; };
+		BA4157D615A6C0F300B389AC /* MyWaitView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4157D515A6C0F300B389AC /* MyWaitView.m */; };
+		BA4157D915A6CBEF00B389AC /* Kyoto_CityBusTimeTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4157D815A6CBEF00B389AC /* Kyoto_CityBusTimeTableController.m */; };
+		BA41581615A6D48800B389AC /* Kyoto_CityBusHolidaysController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA41581515A6D48800B389AC /* Kyoto_CityBusHolidaysController.m */; };
+		BA41581915A6D4BC00B389AC /* Kyoto_CityBusSaturdaysController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA41581815A6D4BC00B389AC /* Kyoto_CityBusSaturdaysController.m */; };
+		BA41581E15A6D7C300B389AC /* Kyoto_CityBusWeekdaysController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA41581D15A6D7C300B389AC /* Kyoto_CityBusWeekdaysController.m */; };
+		BA8DB9351573557900E477A2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8DB9341573557900E477A2 /* UIKit.framework */; };
+		BA8DB9371573557900E477A2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8DB9361573557900E477A2 /* Foundation.framework */; };
+		BA8DB9391573557900E477A2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8DB9381573557900E477A2 /* CoreGraphics.framework */; };
+		BA8DB93F1573557A00E477A2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BA8DB93D1573557A00E477A2 /* InfoPlist.strings */; };
+		BA8DB9411573557A00E477A2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BA8DB9401573557A00E477A2 /* main.m */; };
+		BA8DB9451573557A00E477A2 /* Kyoto_CityBusAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BA8DB9441573557A00E477A2 /* Kyoto_CityBusAppDelegate.m */; };
+		BA8DB9481573557A00E477A2 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA8DB9461573557A00E477A2 /* MainStoryboard.storyboard */; };
+		BA8DB94B1573557A00E477A2 /* Kyoto_CityBusMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA8DB94A1573557A00E477A2 /* Kyoto_CityBusMasterViewController.m */; };
+		BAA3AB0A1588359800045D01 /* weekday.png in Resources */ = {isa = PBXBuildFile; fileRef = BAA3AB091588359800045D01 /* weekday.png */; };
+		BAA3AB0C1588365000045D01 /* saturday.png in Resources */ = {isa = PBXBuildFile; fileRef = BAA3AB0B1588365000045D01 /* saturday.png */; };
+		BAA3AB0E158836D000045D01 /* holiday.png in Resources */ = {isa = PBXBuildFile; fileRef = BAA3AB0D158836D000045D01 /* holiday.png */; };
+		BAAEA3EC16195716009E58BF /* MyBusStopSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = BAAEA3E716195716009E58BF /* MyBusStopSelector.m */; };
+		BAAEA3ED16195716009E58BF /* MyKeitoBusStop.m in Sources */ = {isa = PBXBuildFile; fileRef = BAAEA3E916195716009E58BF /* MyKeitoBusStop.m */; };
+		BAAEA3EE16195716009E58BF /* MyReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = BAAEA3EB16195716009E58BF /* MyReachability.m */; };
+		BAAEA3F416195758009E58BF /* noteBusstopController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAAEA3F116195758009E58BF /* noteBusstopController.m */; };
+		BAAEA3F516195758009E58BF /* NSString+NSString_Henkan.m in Sources */ = {isa = PBXBuildFile; fileRef = BAAEA3F316195758009E58BF /* NSString+NSString_Henkan.m */; };
+		BAAEA3F816195764009E58BF /* Kyoto_CityBusDaysTimeTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAAEA3F716195764009E58BF /* Kyoto_CityBusDaysTimeTableController.m */; };
+		BAAEA3FD161957EC009E58BF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAAEA3FC161957EC009E58BF /* SystemConfiguration.framework */; };
+		BAAEA4001619581B009E58BF /* PickupTimeTable.m in Sources */ = {isa = PBXBuildFile; fileRef = BAAEA3FF1619581B009E58BF /* PickupTimeTable.m */; };
+		BAAEA4181619587D009E58BF /* kawaramachi_sanjo.gif in Resources */ = {isa = PBXBuildFile; fileRef = BAAEA4051619587D009E58BF /* kawaramachi_sanjo.gif */; };
+		BAAEA4191619587D009E58BF /* kinkaku.gif in Resources */ = {isa = PBXBuildFile; fileRef = BAAEA4061619587D009E58BF /* kinkaku.gif */; };
+		BAAEA41A1619587D009E58BF /* kitano_hakubaicho.gif in Resources */ = {isa = PBXBuildFile; fileRef = BAAEA4071619587D009E58BF /* kitano_hakubaicho.gif */; };
+		BAAEA41B1619587D009E58BF /* kitaoji_bt.gif in Resources */ = {isa = PBXBuildFile; fileRef = BAAEA4081619587D009E58BF /* kitaoji_bt.gif */; };
+		BAAEA41C1619587D009E58BF /* kyoto_siyakusyo.gif in Resources */ = {isa = PBXBuildFile; fileRef = BAAEA4091619587D009E58BF /* kyoto_siyakusyo.gif */; };
+		BAAEA41D1619587D009E58BF /* kyoto_sta.gif in Resources */ = {isa = PBXBuildFile; fileRef = BAAEA40A1619587D009E58BF /* kyoto_sta.gif */; };
+		BAAEA41E1619587D009E58BF /* nijo_sta.gif in Resources */ = {isa = PBXBuildFile; fileRef = BAAEA40B1619587D009E58BF /* nijo_sta.gif */; };
+		BAAEA41F1619587D009E58BF /* nishinokyo_enmachi.gif in Resources */ = {isa = PBXBuildFile; fileRef = BAAEA40C1619587D009E58BF /* nishinokyo_enmachi.gif */; };
+		BAAEA4201619587D009E58BF /* nishioji_shijo.gif in Resources */ = {isa = PBXBuildFile; fileRef = BAAEA40D1619587D009E58BF /* nishioji_shijo.gif */; };
+		BAAEA4211619587D009E58BF /* sanjo_keihan.gif in Resources */ = {isa = PBXBuildFile; fileRef = BAAEA40E1619587D009E58BF /* sanjo_keihan.gif */; };
+		BAAEA4221619587D009E58BF /* senbon_imadegawa.gif in Resources */ = {isa = PBXBuildFile; fileRef = BAAEA40F1619587D009E58BF /* senbon_imadegawa.gif */; };
+		BAAEA4231619587D009E58BF /* shijo_karasuma.gif in Resources */ = {isa = PBXBuildFile; fileRef = BAAEA4101619587D009E58BF /* shijo_karasuma.gif */; };
+		BAAEA4241619587D009E58BF /* shijo_kawaramachi.gif in Resources */ = {isa = PBXBuildFile; fileRef = BAAEA4111619587D009E58BF /* shijo_kawaramachi.gif */; };
+		BAAEA4251619587D009E58BF /* shijo_keihan.gif in Resources */ = {isa = PBXBuildFile; fileRef = BAAEA4121619587D009E58BF /* shijo_keihan.gif */; };
+		BAAEA4261619587D009E58BF /* shijo_omiya.gif in Resources */ = {isa = PBXBuildFile; fileRef = BAAEA4131619587D009E58BF /* shijo_omiya.gif */; };
+		BAAEA42916195955009E58BF /* avanti.png in Resources */ = {isa = PBXBuildFile; fileRef = BAAEA42816195955009E58BF /* avanti.png */; };
+		BAAEA42B16195968009E58BF /* ginkaku.png in Resources */ = {isa = PBXBuildFile; fileRef = BAAEA42A16195968009E58BF /* ginkaku.png */; };
+		BAAEA42D16195977009E58BF /* kawaramachi_imadegawa.png in Resources */ = {isa = PBXBuildFile; fileRef = BAAEA42C16195977009E58BF /* kawaramachi_imadegawa.png */; };
+		BAAEA42F16195A56009E58BF /* gion.png in Resources */ = {isa = PBXBuildFile; fileRef = BAAEA42E16195A56009E58BF /* gion.png */; };
+		BAD94A021575DCB800107B10 /* pickupDataInHTML.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD949FF1575DCB800107B10 /* pickupDataInHTML.m */; };
+		BAD94A061575E7BC00107B10 /* pickupBus.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD94A051575E7BC00107B10 /* pickupBus.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BA00DB541626318200A1045A /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = Data/icon/Icon.png; sourceTree = SOURCE_ROOT; };
+		BA00DB561626318F00A1045A /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "Data/icon/Icon@2x.png"; sourceTree = SOURCE_ROOT; };
+		BA22CC65157F53250037BFF4 /* pickupBusController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pickupBusController.h; sourceTree = "<group>"; };
+		BA22CC66157F53250037BFF4 /* pickupBusController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = pickupBusController.m; sourceTree = "<group>"; };
+		BA4157D415A6C0F300B389AC /* MyWaitView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyWaitView.h; sourceTree = "<group>"; };
+		BA4157D515A6C0F300B389AC /* MyWaitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyWaitView.m; sourceTree = "<group>"; };
+		BA4157D715A6CBEF00B389AC /* Kyoto_CityBusTimeTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kyoto_CityBusTimeTableController.h; sourceTree = "<group>"; };
+		BA4157D815A6CBEF00B389AC /* Kyoto_CityBusTimeTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Kyoto_CityBusTimeTableController.m; sourceTree = "<group>"; };
+		BA41581415A6D48800B389AC /* Kyoto_CityBusHolidaysController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kyoto_CityBusHolidaysController.h; sourceTree = "<group>"; };
+		BA41581515A6D48800B389AC /* Kyoto_CityBusHolidaysController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Kyoto_CityBusHolidaysController.m; sourceTree = "<group>"; };
+		BA41581715A6D4BC00B389AC /* Kyoto_CityBusSaturdaysController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kyoto_CityBusSaturdaysController.h; sourceTree = "<group>"; };
+		BA41581815A6D4BC00B389AC /* Kyoto_CityBusSaturdaysController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Kyoto_CityBusSaturdaysController.m; sourceTree = "<group>"; };
+		BA41581A15A6D4EE00B389AC /* Kyoto_CityBusWeekdaysController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kyoto_CityBusWeekdaysController.h; sourceTree = "<group>"; };
+		BA41581D15A6D7C300B389AC /* Kyoto_CityBusWeekdaysController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Kyoto_CityBusWeekdaysController.m; sourceTree = "<group>"; };
+		BA82F7F51575BA72004242C6 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		BA82F7F61575BA72004242C6 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		BA82F7F71575BA72004242C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BA82F8101575BA73004242C6 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		BA8DB9301573557900E477A2 /* KyotoCityBus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KyotoCityBus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA8DB9341573557900E477A2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BA8DB9361573557900E477A2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BA8DB9381573557900E477A2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BA8DB93C1573557A00E477A2 /* KyotoCityBus-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KyotoCityBus-Info.plist"; sourceTree = "<group>"; };
+		BA8DB93E1573557A00E477A2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BA8DB9401573557A00E477A2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BA8DB9421573557A00E477A2 /* KyotoCityBus-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KyotoCityBus-Prefix.pch"; sourceTree = "<group>"; };
+		BA8DB9431573557A00E477A2 /* Kyoto_CityBusAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Kyoto_CityBusAppDelegate.h; sourceTree = "<group>"; };
+		BA8DB9441573557A00E477A2 /* Kyoto_CityBusAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Kyoto_CityBusAppDelegate.m; sourceTree = "<group>"; };
+		BA8DB9471573557A00E477A2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		BA8DB9491573557A00E477A2 /* Kyoto_CityBusMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Kyoto_CityBusMasterViewController.h; sourceTree = "<group>"; };
+		BA8DB94A1573557A00E477A2 /* Kyoto_CityBusMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Kyoto_CityBusMasterViewController.m; sourceTree = "<group>"; };
+		BAA3AB091588359800045D01 /* weekday.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = weekday.png; sourceTree = "<group>"; };
+		BAA3AB0B1588365000045D01 /* saturday.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = saturday.png; sourceTree = "<group>"; };
+		BAA3AB0D158836D000045D01 /* holiday.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = holiday.png; sourceTree = "<group>"; };
+		BAAEA3E616195716009E58BF /* MyBusStopSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyBusStopSelector.h; sourceTree = "<group>"; };
+		BAAEA3E716195716009E58BF /* MyBusStopSelector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyBusStopSelector.m; sourceTree = "<group>"; };
+		BAAEA3E816195716009E58BF /* MyKeitoBusStop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyKeitoBusStop.h; sourceTree = "<group>"; };
+		BAAEA3E916195716009E58BF /* MyKeitoBusStop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyKeitoBusStop.m; sourceTree = "<group>"; };
+		BAAEA3EA16195716009E58BF /* MyReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyReachability.h; sourceTree = "<group>"; };
+		BAAEA3EB16195716009E58BF /* MyReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyReachability.m; sourceTree = "<group>"; };
+		BAAEA3F016195758009E58BF /* noteBusstopController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = noteBusstopController.h; sourceTree = "<group>"; };
+		BAAEA3F116195758009E58BF /* noteBusstopController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = noteBusstopController.m; sourceTree = "<group>"; };
+		BAAEA3F216195758009E58BF /* NSString+NSString_Henkan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+NSString_Henkan.h"; sourceTree = "<group>"; };
+		BAAEA3F316195758009E58BF /* NSString+NSString_Henkan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+NSString_Henkan.m"; sourceTree = "<group>"; };
+		BAAEA3F616195764009E58BF /* Kyoto_CityBusDaysTimeTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kyoto_CityBusDaysTimeTableController.h; sourceTree = "<group>"; };
+		BAAEA3F716195764009E58BF /* Kyoto_CityBusDaysTimeTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Kyoto_CityBusDaysTimeTableController.m; sourceTree = "<group>"; };
+		BAAEA3FC161957EC009E58BF /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = ../../../../../../../../System/Library/Frameworks/SystemConfiguration.framework; sourceTree = "<group>"; };
+		BAAEA3FE1619581B009E58BF /* PickupTimeTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickupTimeTable.h; sourceTree = "<group>"; };
+		BAAEA3FF1619581B009E58BF /* PickupTimeTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickupTimeTable.m; sourceTree = "<group>"; };
+		BAAEA4011619587D009E58BF /* avanti.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = avanti.gif; sourceTree = "<group>"; };
+		BAAEA4021619587D009E58BF /* ginkaku.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ginkaku.gif; sourceTree = "<group>"; };
+		BAAEA4031619587D009E58BF /* gion.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gion.gif; sourceTree = "<group>"; };
+		BAAEA4041619587D009E58BF /* kawaramachi_imadegawa.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = kawaramachi_imadegawa.gif; sourceTree = "<group>"; };
+		BAAEA4051619587D009E58BF /* kawaramachi_sanjo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = kawaramachi_sanjo.gif; sourceTree = "<group>"; };
+		BAAEA4061619587D009E58BF /* kinkaku.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = kinkaku.gif; sourceTree = "<group>"; };
+		BAAEA4071619587D009E58BF /* kitano_hakubaicho.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = kitano_hakubaicho.gif; sourceTree = "<group>"; };
+		BAAEA4081619587D009E58BF /* kitaoji_bt.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = kitaoji_bt.gif; sourceTree = "<group>"; };
+		BAAEA4091619587D009E58BF /* kyoto_siyakusyo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = kyoto_siyakusyo.gif; sourceTree = "<group>"; };
+		BAAEA40A1619587D009E58BF /* kyoto_sta.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = kyoto_sta.gif; sourceTree = "<group>"; };
+		BAAEA40B1619587D009E58BF /* nijo_sta.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = nijo_sta.gif; sourceTree = "<group>"; };
+		BAAEA40C1619587D009E58BF /* nishinokyo_enmachi.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = nishinokyo_enmachi.gif; sourceTree = "<group>"; };
+		BAAEA40D1619587D009E58BF /* nishioji_shijo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = nishioji_shijo.gif; sourceTree = "<group>"; };
+		BAAEA40E1619587D009E58BF /* sanjo_keihan.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = sanjo_keihan.gif; sourceTree = "<group>"; };
+		BAAEA40F1619587D009E58BF /* senbon_imadegawa.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = senbon_imadegawa.gif; sourceTree = "<group>"; };
+		BAAEA4101619587D009E58BF /* shijo_karasuma.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = shijo_karasuma.gif; sourceTree = "<group>"; };
+		BAAEA4111619587D009E58BF /* shijo_kawaramachi.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = shijo_kawaramachi.gif; sourceTree = "<group>"; };
+		BAAEA4121619587D009E58BF /* shijo_keihan.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = shijo_keihan.gif; sourceTree = "<group>"; };
+		BAAEA4131619587D009E58BF /* shijo_omiya.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = shijo_omiya.gif; sourceTree = "<group>"; };
+		BAAEA42816195955009E58BF /* avanti.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = avanti.png; path = Data/noteBusstop/avanti.png; sourceTree = SOURCE_ROOT; };
+		BAAEA42A16195968009E58BF /* ginkaku.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ginkaku.png; path = Data/noteBusstop/ginkaku.png; sourceTree = SOURCE_ROOT; };
+		BAAEA42C16195977009E58BF /* kawaramachi_imadegawa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = kawaramachi_imadegawa.png; path = Data/noteBusstop/kawaramachi_imadegawa.png; sourceTree = SOURCE_ROOT; };
+		BAAEA42E16195A56009E58BF /* gion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gion.png; path = Data/noteBusstop/gion.png; sourceTree = SOURCE_ROOT; };
+		BAD949FE1575DCB800107B10 /* pickupDataInHTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pickupDataInHTML.h; sourceTree = "<group>"; };
+		BAD949FF1575DCB800107B10 /* pickupDataInHTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = pickupDataInHTML.m; sourceTree = "<group>"; };
+		BAD94A041575E7BC00107B10 /* pickupBus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pickupBus.h; sourceTree = "<group>"; };
+		BAD94A051575E7BC00107B10 /* pickupBus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = pickupBus.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BA8DB92D1573557900E477A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA8DB9351573557900E477A2 /* UIKit.framework in Frameworks */,
+				BA8DB9371573557900E477A2 /* Foundation.framework in Frameworks */,
+				BA8DB9391573557900E477A2 /* CoreGraphics.framework in Frameworks */,
+				BAAEA3FD161957EC009E58BF /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BA82F7F41575BA72004242C6 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BA82F7F51575BA72004242C6 /* AppKit.framework */,
+				BA82F7F61575BA72004242C6 /* CoreData.framework */,
+				BA82F7F71575BA72004242C6 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		BA8DB9251573557900E477A2 = {
+			isa = PBXGroup;
+			children = (
+				BA8DB93A1573557900E477A2 /* KyotoCityBus */,
+				BA8DB9331573557900E477A2 /* Frameworks */,
+				BA8DB9311573557900E477A2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BA8DB9311573557900E477A2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BA8DB9301573557900E477A2 /* KyotoCityBus.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BA8DB9331573557900E477A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BAAEA3FC161957EC009E58BF /* SystemConfiguration.framework */,
+				BA8DB9341573557900E477A2 /* UIKit.framework */,
+				BA8DB9361573557900E477A2 /* Foundation.framework */,
+				BA8DB9381573557900E477A2 /* CoreGraphics.framework */,
+				BA82F8101575BA73004242C6 /* SenTestingKit.framework */,
+				BA82F7F41575BA72004242C6 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BA8DB93A1573557900E477A2 /* KyotoCityBus */ = {
+			isa = PBXGroup;
+			children = (
+				BAA3AAFD15882E5800045D01 /* Resources */,
+				BAAEA3E5161956F5009E58BF /* Library */,
+				BAAEA3EF16195729009E58BF /* Pickup */,
+				BA8DB9431573557A00E477A2 /* Kyoto_CityBusAppDelegate.h */,
+				BA8DB9441573557A00E477A2 /* Kyoto_CityBusAppDelegate.m */,
+				BA8DB9491573557A00E477A2 /* Kyoto_CityBusMasterViewController.h */,
+				BA8DB94A1573557A00E477A2 /* Kyoto_CityBusMasterViewController.m */,
+				BA4157D715A6CBEF00B389AC /* Kyoto_CityBusTimeTableController.h */,
+				BA4157D815A6CBEF00B389AC /* Kyoto_CityBusTimeTableController.m */,
+				BAAEA3F916195789009E58BF /* Kyoto_CityBusTTC */,
+				BA4157D415A6C0F300B389AC /* MyWaitView.h */,
+				BA4157D515A6C0F300B389AC /* MyWaitView.m */,
+				BA8DB93B1573557A00E477A2 /* Supporting Files */,
+			);
+			path = KyotoCityBus;
+			sourceTree = "<group>";
+		};
+		BA8DB93B1573557A00E477A2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BA8DB93C1573557A00E477A2 /* KyotoCityBus-Info.plist */,
+				BA8DB93D1573557A00E477A2 /* InfoPlist.strings */,
+				BA8DB9401573557A00E477A2 /* main.m */,
+				BA8DB9421573557A00E477A2 /* KyotoCityBus-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BAA3AAFD15882E5800045D01 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BA00DB561626318F00A1045A /* Icon@2x.png */,
+				BA00DB541626318200A1045A /* Icon.png */,
+				BAAEA4271619588A009E58BF /* noteBusStop */,
+				BA8DB9461573557A00E477A2 /* MainStoryboard.storyboard */,
+				BAA3AB0D158836D000045D01 /* holiday.png */,
+				BAA3AB0B1588365000045D01 /* saturday.png */,
+				BAA3AB091588359800045D01 /* weekday.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		BAAEA3E5161956F5009E58BF /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				BAAEA3F016195758009E58BF /* noteBusstopController.h */,
+				BAAEA3F116195758009E58BF /* noteBusstopController.m */,
+				BAAEA3F216195758009E58BF /* NSString+NSString_Henkan.h */,
+				BAAEA3F316195758009E58BF /* NSString+NSString_Henkan.m */,
+				BAAEA3E616195716009E58BF /* MyBusStopSelector.h */,
+				BAAEA3E716195716009E58BF /* MyBusStopSelector.m */,
+				BAAEA3E816195716009E58BF /* MyKeitoBusStop.h */,
+				BAAEA3E916195716009E58BF /* MyKeitoBusStop.m */,
+				BAAEA3EA16195716009E58BF /* MyReachability.h */,
+				BAAEA3EB16195716009E58BF /* MyReachability.m */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		BAAEA3EF16195729009E58BF /* Pickup */ = {
+			isa = PBXGroup;
+			children = (
+				BAAEA3FE1619581B009E58BF /* PickupTimeTable.h */,
+				BAAEA3FF1619581B009E58BF /* PickupTimeTable.m */,
+				BAD94A041575E7BC00107B10 /* pickupBus.h */,
+				BAD94A051575E7BC00107B10 /* pickupBus.m */,
+				BA22CC65157F53250037BFF4 /* pickupBusController.h */,
+				BA22CC66157F53250037BFF4 /* pickupBusController.m */,
+				BAD949FE1575DCB800107B10 /* pickupDataInHTML.h */,
+				BAD949FF1575DCB800107B10 /* pickupDataInHTML.m */,
+			);
+			name = Pickup;
+			sourceTree = "<group>";
+		};
+		BAAEA3F916195789009E58BF /* Kyoto_CityBusTTC */ = {
+			isa = PBXGroup;
+			children = (
+				BAAEA3F616195764009E58BF /* Kyoto_CityBusDaysTimeTableController.h */,
+				BAAEA3F716195764009E58BF /* Kyoto_CityBusDaysTimeTableController.m */,
+				BA41581A15A6D4EE00B389AC /* Kyoto_CityBusWeekdaysController.h */,
+				BA41581D15A6D7C300B389AC /* Kyoto_CityBusWeekdaysController.m */,
+				BA41581715A6D4BC00B389AC /* Kyoto_CityBusSaturdaysController.h */,
+				BA41581815A6D4BC00B389AC /* Kyoto_CityBusSaturdaysController.m */,
+				BA41581415A6D48800B389AC /* Kyoto_CityBusHolidaysController.h */,
+				BA41581515A6D48800B389AC /* Kyoto_CityBusHolidaysController.m */,
+			);
+			name = Kyoto_CityBusTTC;
+			sourceTree = "<group>";
+		};
+		BAAEA4271619588A009E58BF /* noteBusStop */ = {
+			isa = PBXGroup;
+			children = (
+				BAAEA42816195955009E58BF /* avanti.png */,
+				BAAEA42A16195968009E58BF /* ginkaku.png */,
+				BAAEA42E16195A56009E58BF /* gion.png */,
+				BAAEA42C16195977009E58BF /* kawaramachi_imadegawa.png */,
+				BAAEA4011619587D009E58BF /* avanti.gif */,
+				BAAEA4021619587D009E58BF /* ginkaku.gif */,
+				BAAEA4031619587D009E58BF /* gion.gif */,
+				BAAEA4041619587D009E58BF /* kawaramachi_imadegawa.gif */,
+				BAAEA4051619587D009E58BF /* kawaramachi_sanjo.gif */,
+				BAAEA4061619587D009E58BF /* kinkaku.gif */,
+				BAAEA4071619587D009E58BF /* kitano_hakubaicho.gif */,
+				BAAEA4081619587D009E58BF /* kitaoji_bt.gif */,
+				BAAEA4091619587D009E58BF /* kyoto_siyakusyo.gif */,
+				BAAEA40A1619587D009E58BF /* kyoto_sta.gif */,
+				BAAEA40B1619587D009E58BF /* nijo_sta.gif */,
+				BAAEA40C1619587D009E58BF /* nishinokyo_enmachi.gif */,
+				BAAEA40D1619587D009E58BF /* nishioji_shijo.gif */,
+				BAAEA40E1619587D009E58BF /* sanjo_keihan.gif */,
+				BAAEA40F1619587D009E58BF /* senbon_imadegawa.gif */,
+				BAAEA4101619587D009E58BF /* shijo_karasuma.gif */,
+				BAAEA4111619587D009E58BF /* shijo_kawaramachi.gif */,
+				BAAEA4121619587D009E58BF /* shijo_keihan.gif */,
+				BAAEA4131619587D009E58BF /* shijo_omiya.gif */,
+			);
+			name = noteBusStop;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BA8DB92F1573557900E477A2 /* KyotoCityBus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA8DB9511573557A00E477A2 /* Build configuration list for PBXNativeTarget "KyotoCityBus" */;
+			buildPhases = (
+				BA8DB92C1573557900E477A2 /* Sources */,
+				BA8DB92D1573557900E477A2 /* Frameworks */,
+				BA8DB92E1573557900E477A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KyotoCityBus;
+			productName = KyotoCityBus;
+			productReference = BA8DB9301573557900E477A2 /* KyotoCityBus.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BA8DB9271573557900E477A2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = wHITEgODDESS;
+			};
+			buildConfigurationList = BA8DB92A1573557900E477A2 /* Build configuration list for PBXProject "KyotoCityBus" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BA8DB9251573557900E477A2;
+			productRefGroup = BA8DB9311573557900E477A2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BA8DB92F1573557900E477A2 /* KyotoCityBus */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BA8DB92E1573557900E477A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA8DB93F1573557A00E477A2 /* InfoPlist.strings in Resources */,
+				BA8DB9481573557A00E477A2 /* MainStoryboard.storyboard in Resources */,
+				BAA3AB0A1588359800045D01 /* weekday.png in Resources */,
+				BAA3AB0C1588365000045D01 /* saturday.png in Resources */,
+				BAA3AB0E158836D000045D01 /* holiday.png in Resources */,
+				BAAEA4181619587D009E58BF /* kawaramachi_sanjo.gif in Resources */,
+				BAAEA4191619587D009E58BF /* kinkaku.gif in Resources */,
+				BAAEA41A1619587D009E58BF /* kitano_hakubaicho.gif in Resources */,
+				BAAEA41B1619587D009E58BF /* kitaoji_bt.gif in Resources */,
+				BAAEA41C1619587D009E58BF /* kyoto_siyakusyo.gif in Resources */,
+				BAAEA41D1619587D009E58BF /* kyoto_sta.gif in Resources */,
+				BAAEA41E1619587D009E58BF /* nijo_sta.gif in Resources */,
+				BAAEA41F1619587D009E58BF /* nishinokyo_enmachi.gif in Resources */,
+				BAAEA4201619587D009E58BF /* nishioji_shijo.gif in Resources */,
+				BAAEA4211619587D009E58BF /* sanjo_keihan.gif in Resources */,
+				BAAEA4221619587D009E58BF /* senbon_imadegawa.gif in Resources */,
+				BAAEA4231619587D009E58BF /* shijo_karasuma.gif in Resources */,
+				BAAEA4241619587D009E58BF /* shijo_kawaramachi.gif in Resources */,
+				BAAEA4251619587D009E58BF /* shijo_keihan.gif in Resources */,
+				BAAEA4261619587D009E58BF /* shijo_omiya.gif in Resources */,
+				BAAEA42916195955009E58BF /* avanti.png in Resources */,
+				BAAEA42B16195968009E58BF /* ginkaku.png in Resources */,
+				BAAEA42D16195977009E58BF /* kawaramachi_imadegawa.png in Resources */,
+				BAAEA42F16195A56009E58BF /* gion.png in Resources */,
+				BA00DB551626318200A1045A /* Icon.png in Resources */,
+				BA00DB571626318F00A1045A /* Icon@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BA8DB92C1573557900E477A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA8DB9411573557A00E477A2 /* main.m in Sources */,
+				BA8DB9451573557A00E477A2 /* Kyoto_CityBusAppDelegate.m in Sources */,
+				BA8DB94B1573557A00E477A2 /* Kyoto_CityBusMasterViewController.m in Sources */,
+				BAD94A021575DCB800107B10 /* pickupDataInHTML.m in Sources */,
+				BAD94A061575E7BC00107B10 /* pickupBus.m in Sources */,
+				BA22CC67157F53250037BFF4 /* pickupBusController.m in Sources */,
+				BA4157D615A6C0F300B389AC /* MyWaitView.m in Sources */,
+				BA4157D915A6CBEF00B389AC /* Kyoto_CityBusTimeTableController.m in Sources */,
+				BA41581615A6D48800B389AC /* Kyoto_CityBusHolidaysController.m in Sources */,
+				BA41581915A6D4BC00B389AC /* Kyoto_CityBusSaturdaysController.m in Sources */,
+				BA41581E15A6D7C300B389AC /* Kyoto_CityBusWeekdaysController.m in Sources */,
+				BAAEA3EC16195716009E58BF /* MyBusStopSelector.m in Sources */,
+				BAAEA3ED16195716009E58BF /* MyKeitoBusStop.m in Sources */,
+				BAAEA3EE16195716009E58BF /* MyReachability.m in Sources */,
+				BAAEA3F416195758009E58BF /* noteBusstopController.m in Sources */,
+				BAAEA3F516195758009E58BF /* NSString+NSString_Henkan.m in Sources */,
+				BAAEA3F816195764009E58BF /* Kyoto_CityBusDaysTimeTableController.m in Sources */,
+				BAAEA4001619581B009E58BF /* PickupTimeTable.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BA8DB93D1573557A00E477A2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA8DB93E1573557A00E477A2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BA8DB9461573557A00E477A2 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA8DB9471573557A00E477A2 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BA8DB94F1573557A00E477A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BA8DB9501573557A00E477A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BA8DB9521573557A00E477A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KyotoCityBus/KyotoCityBus-Prefix.pch";
+				INFOPLIST_FILE = "KyotoCityBus/KyotoCityBus-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7 armv7s";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BA8DB9531573557A00E477A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KyotoCityBus/KyotoCityBus-Prefix.pch";
+				INFOPLIST_FILE = "KyotoCityBus/KyotoCityBus-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7 armv7s";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BA8DB92A1573557900E477A2 /* Build configuration list for PBXProject "KyotoCityBus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA8DB94F1573557A00E477A2 /* Debug */,
+				BA8DB9501573557A00E477A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA8DB9511573557A00E477A2 /* Build configuration list for PBXNativeTarget "KyotoCityBus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA8DB9521573557A00E477A2 /* Debug */,
+				BA8DB9531573557A00E477A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BA8DB9271573557900E477A2 /* Project object */;
+}

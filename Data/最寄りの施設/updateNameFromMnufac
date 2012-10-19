@@ -1,0 +1,21 @@
+#! /bin/sh
+NAME=tmp.$$
+NAME2=tmp2.$$
+
+curl http://www.city.kyoto.jp/kotsu/busdia/hyperdia/mnufac1.htm > $NAME
+curl http://www.city.kyoto.jp/kotsu/busdia/hyperdia/mnufac2.htm >> $NAME
+curl http://www.city.kyoto.jp/kotsu/busdia/hyperdia/mnufac3.htm >> $NAME
+curl http://www.city.kyoto.jp/kotsu/busdia/hyperdia/mnufac4.htm >> $NAME
+curl http://www.city.kyoto.jp/kotsu/busdia/hyperdia/mnufac5.htm >> $NAME
+curl http://www.city.kyoto.jp/kotsu/busdia/hyperdia/mnufac6.htm >> $NAME
+curl http://www.city.kyoto.jp/kotsu/busdia/hyperdia/mnufac7.htm >> $NAME
+curl http://www.city.kyoto.jp/kotsu/busdia/hyperdia/mnufac8.htm >> $NAME
+curl http://www.city.kyoto.jp/kotsu/busdia/hyperdia/mnufac9.htm >> $NAME
+curl http://www.city.kyoto.jp/kotsu/busdia/hyperdia/mnufac10.htm >> $NAME
+
+grep TD $NAME > $NAME2
+
+pickupFac < $NAME2 > output.log
+rm -f $NAME
+rm -f $NAME2
+
