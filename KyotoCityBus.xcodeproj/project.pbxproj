@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BA00DB551626318200A1045A /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BA00DB541626318200A1045A /* Icon.png */; };
-		BA00DB571626318F00A1045A /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BA00DB561626318F00A1045A /* Icon@2x.png */; };
 		BA22CC67157F53250037BFF4 /* pickupBusController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA22CC66157F53250037BFF4 /* pickupBusController.m */; };
 		BA4157D615A6C0F300B389AC /* MyWaitView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4157D515A6C0F300B389AC /* MyWaitView.m */; };
 		BA4157D915A6CBEF00B389AC /* Kyoto_CityBusTimeTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4157D815A6CBEF00B389AC /* Kyoto_CityBusTimeTableController.m */; };
@@ -53,13 +51,16 @@
 		BAAEA42B16195968009E58BF /* ginkaku.png in Resources */ = {isa = PBXBuildFile; fileRef = BAAEA42A16195968009E58BF /* ginkaku.png */; };
 		BAAEA42D16195977009E58BF /* kawaramachi_imadegawa.png in Resources */ = {isa = PBXBuildFile; fileRef = BAAEA42C16195977009E58BF /* kawaramachi_imadegawa.png */; };
 		BAAEA42F16195A56009E58BF /* gion.png in Resources */ = {isa = PBXBuildFile; fileRef = BAAEA42E16195A56009E58BF /* gion.png */; };
+		BAD0477416524003002771AE /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BAD0477216524003002771AE /* Icon.png */; };
+		BAD0477516524003002771AE /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BAD0477316524003002771AE /* Icon@2x.png */; };
+		BAD4F645165212E4008F0AC2 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BAD4F644165212E4008F0AC2 /* Default@2x.png */; };
+		BAD4F647165212E6008F0AC2 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BAD4F646165212E6008F0AC2 /* Default-568h@2x.png */; };
+		BAD4F64916523E02008F0AC2 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = BAD4F64816523E02008F0AC2 /* Default.png */; };
 		BAD94A021575DCB800107B10 /* pickupDataInHTML.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD949FF1575DCB800107B10 /* pickupDataInHTML.m */; };
 		BAD94A061575E7BC00107B10 /* pickupBus.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD94A051575E7BC00107B10 /* pickupBus.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		BA00DB541626318200A1045A /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = Data/icon/Icon.png; sourceTree = SOURCE_ROOT; };
-		BA00DB561626318F00A1045A /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "Data/icon/Icon@2x.png"; sourceTree = SOURCE_ROOT; };
 		BA22CC65157F53250037BFF4 /* pickupBusController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pickupBusController.h; sourceTree = "<group>"; };
 		BA22CC66157F53250037BFF4 /* pickupBusController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = pickupBusController.m; sourceTree = "<group>"; };
 		BA4157D415A6C0F300B389AC /* MyWaitView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyWaitView.h; sourceTree = "<group>"; };
@@ -130,6 +131,11 @@
 		BAAEA42A16195968009E58BF /* ginkaku.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ginkaku.png; path = Data/noteBusstop/ginkaku.png; sourceTree = SOURCE_ROOT; };
 		BAAEA42C16195977009E58BF /* kawaramachi_imadegawa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = kawaramachi_imadegawa.png; path = Data/noteBusstop/kawaramachi_imadegawa.png; sourceTree = SOURCE_ROOT; };
 		BAAEA42E16195A56009E58BF /* gion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gion.png; path = Data/noteBusstop/gion.png; sourceTree = SOURCE_ROOT; };
+		BAD0477216524003002771AE /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = SOURCE_ROOT; };
+		BAD0477316524003002771AE /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = SOURCE_ROOT; };
+		BAD4F644165212E4008F0AC2 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
+		BAD4F646165212E6008F0AC2 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
+		BAD4F64816523E02008F0AC2 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
 		BAD949FE1575DCB800107B10 /* pickupDataInHTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pickupDataInHTML.h; sourceTree = "<group>"; };
 		BAD949FF1575DCB800107B10 /* pickupDataInHTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = pickupDataInHTML.m; sourceTree = "<group>"; };
 		BAD94A041575E7BC00107B10 /* pickupBus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pickupBus.h; sourceTree = "<group>"; };
@@ -225,8 +231,11 @@
 		BAA3AAFD15882E5800045D01 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				BA00DB561626318F00A1045A /* Icon@2x.png */,
-				BA00DB541626318200A1045A /* Icon.png */,
+				BAD0477216524003002771AE /* Icon.png */,
+				BAD0477316524003002771AE /* Icon@2x.png */,
+				BAD4F64816523E02008F0AC2 /* Default.png */,
+				BAD4F646165212E6008F0AC2 /* Default-568h@2x.png */,
+				BAD4F644165212E4008F0AC2 /* Default@2x.png */,
 				BAAEA4271619588A009E58BF /* noteBusStop */,
 				BA8DB9461573557A00E477A2 /* MainStoryboard.storyboard */,
 				BAA3AB0D158836D000045D01 /* holiday.png */,
@@ -388,8 +397,11 @@
 				BAAEA42B16195968009E58BF /* ginkaku.png in Resources */,
 				BAAEA42D16195977009E58BF /* kawaramachi_imadegawa.png in Resources */,
 				BAAEA42F16195A56009E58BF /* gion.png in Resources */,
-				BA00DB551626318200A1045A /* Icon.png in Resources */,
-				BA00DB571626318F00A1045A /* Icon@2x.png in Resources */,
+				BAD4F645165212E4008F0AC2 /* Default@2x.png in Resources */,
+				BAD4F647165212E6008F0AC2 /* Default-568h@2x.png in Resources */,
+				BAD4F64916523E02008F0AC2 /* Default.png in Resources */,
+				BAD0477416524003002771AE /* Icon.png in Resources */,
+				BAD0477516524003002771AE /* Icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,6 +508,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KyotoCityBus/KyotoCityBus-Prefix.pch";
 				INFOPLIST_FILE = "KyotoCityBus/KyotoCityBus-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
@@ -508,6 +521,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KyotoCityBus/KyotoCityBus-Prefix.pch";
 				INFOPLIST_FILE = "KyotoCityBus/KyotoCityBus-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;

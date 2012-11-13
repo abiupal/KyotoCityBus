@@ -109,6 +109,8 @@
         [self.waitView setFrame:[self.view frame]];
         self.waitView.backgroundColor = [UIColor blueColor];
 
+        [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
+        
         self.waitView.hidden = NO;
         [self.waitView setNeedsDisplay];
         
@@ -131,6 +133,9 @@ END_REQUESTURL:
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection
 {
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+    
+    
     // do something with the data
     // receivedData is declared as a method instance elsewhere
     NSLog(@"Succeeded! Received %d bytes of data",[self.receivedURL length]);

@@ -116,7 +116,6 @@
     selectedBusstopName = NO;
     [self.busStop resignFirstResponder];
     
-    
     NSIndexPath *selectedRowIndex = [self.tableView indexPathForSelectedRow];
     NSString *s = [self.found objectAtIndex:selectedRowIndex.row];
     NSArray *a = [s componentsSeparatedByString:@","];
@@ -277,6 +276,7 @@
             self.waitView.backgroundColor = [UIColor greenColor];
         else
             self.waitView.backgroundColor = [UIColor orangeColor];
+        [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
         self.waitView.hidden = NO;
         [self.waitView setNeedsDisplay];
         
@@ -299,6 +299,7 @@ END_REQUESTURL:
 
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error
 {
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
     if([error code] ==  NSURLErrorNotConnectedToInternet)
     {
         [connection cancel];
@@ -455,6 +456,9 @@ END_REQUESTURL:
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection
 {
     char buffer[64], i;
+    
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+    
     // do something with the data
     // receivedData is declared as a method instance elsewhere
     NSLog(@"Succeeded! Received %d bytes of data",[self.receivedURL length]);
@@ -562,7 +566,8 @@ END_REQUESTURL:
         else
         {
             selectedBusstopName = YES;
-            self.found = mbss.found;
+            self.found = [mbss.found sortedArrayUsingSelector:@selector(caseInsensitiveCompare:)];
+
             [self.tableView reloadData];
             self.busStop.enabled = YES;
             return;
