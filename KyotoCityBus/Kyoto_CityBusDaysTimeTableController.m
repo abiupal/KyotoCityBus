@@ -5,7 +5,7 @@
 //  Created by 武村 健二 on 2012/07/29.
 //  Copyright (c) 2012年 wHITEgODDESS. All rights reserved.
 //
-
+#import "MyDefine.h"
 #import "Kyoto_CityBusDaysTimeTableController.h"
 #import "Kyoto_CityBusTimeTableController.h"
 #import "PickupTimeTable.h"
@@ -19,6 +19,8 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
+    LOG("START");
+    
     if ( self.timeTable == nil )
     {
         Kyoto_CityBusTimeTableController *ttc = (Kyoto_CityBusTimeTableController *)[self parentViewController];
@@ -31,6 +33,8 @@
         NSDateComponents *comps = [cal components:unitFlags fromDate:[NSDate date]];
         hour = [comps hour];
     }
+    
+    LOG("END");
     return [self.timeTable countOfList];
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -38,6 +42,7 @@
     UITableViewCell *cell = nil;
     NSInteger n = indexPath.row;
     
+    LOG("START");
     if (n == 0)
     {
         cell = [tableView dequeueReusableCellWithIdentifier:@"BusInfoCell"];
@@ -71,6 +76,7 @@
         else
             cell.selected = NO;
     }
+    LOG("END");
     
     return cell;
 }

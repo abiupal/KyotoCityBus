@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		BA22CC67157F53250037BFF4 /* pickupBusController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA22CC66157F53250037BFF4 /* pickupBusController.m */; };
+		BA2FBC1919E8E29B00536D34 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA2FBC1819E8E29B00536D34 /* Images.xcassets */; };
+		BA2FBC1B19E8E3CB00536D34 /* Default-568h@4x.png in Resources */ = {isa = PBXBuildFile; fileRef = BA2FBC1A19E8E3CB00536D34 /* Default-568h@4x.png */; };
 		BA4157D615A6C0F300B389AC /* MyWaitView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4157D515A6C0F300B389AC /* MyWaitView.m */; };
 		BA4157D915A6CBEF00B389AC /* Kyoto_CityBusTimeTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4157D815A6CBEF00B389AC /* Kyoto_CityBusTimeTableController.m */; };
 		BA41581615A6D48800B389AC /* Kyoto_CityBusHolidaysController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA41581515A6D48800B389AC /* Kyoto_CityBusHolidaysController.m */; };
@@ -63,6 +65,8 @@
 /* Begin PBXFileReference section */
 		BA22CC65157F53250037BFF4 /* pickupBusController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pickupBusController.h; sourceTree = "<group>"; };
 		BA22CC66157F53250037BFF4 /* pickupBusController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = pickupBusController.m; sourceTree = "<group>"; };
+		BA2FBC1819E8E29B00536D34 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BA2FBC1A19E8E3CB00536D34 /* Default-568h@4x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@4x.png"; sourceTree = SOURCE_ROOT; };
 		BA4157D415A6C0F300B389AC /* MyWaitView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyWaitView.h; sourceTree = "<group>"; };
 		BA4157D515A6C0F300B389AC /* MyWaitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyWaitView.m; sourceTree = "<group>"; };
 		BA4157D715A6CBEF00B389AC /* Kyoto_CityBusTimeTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kyoto_CityBusTimeTableController.h; sourceTree = "<group>"; };
@@ -77,6 +81,7 @@
 		BA82F7F61575BA72004242C6 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		BA82F7F71575BA72004242C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BA82F8101575BA73004242C6 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		BA8C6F1B1CB0E28500C0A3E5 /* MyDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyDefine.h; sourceTree = "<group>"; };
 		BA8DB9301573557900E477A2 /* KyotoCityBus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KyotoCityBus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA8DB9341573557900E477A2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BA8DB9361573557900E477A2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -212,6 +217,7 @@
 				BAAEA3F916195789009E58BF /* Kyoto_CityBusTTC */,
 				BA4157D415A6C0F300B389AC /* MyWaitView.h */,
 				BA4157D515A6C0F300B389AC /* MyWaitView.m */,
+				BA2FBC1819E8E29B00536D34 /* Images.xcassets */,
 				BA8DB93B1573557A00E477A2 /* Supporting Files */,
 			);
 			path = KyotoCityBus;
@@ -231,6 +237,7 @@
 		BAA3AAFD15882E5800045D01 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				BA2FBC1A19E8E3CB00536D34 /* Default-568h@4x.png */,
 				BAD0477216524003002771AE /* Icon.png */,
 				BAD0477316524003002771AE /* Icon@2x.png */,
 				BAD4F64816523E02008F0AC2 /* Default.png */,
@@ -258,6 +265,7 @@
 				BAAEA3E916195716009E58BF /* MyKeitoBusStop.m */,
 				BAAEA3EA16195716009E58BF /* MyReachability.h */,
 				BAAEA3EB16195716009E58BF /* MyReachability.m */,
+				BA8C6F1B1CB0E28500C0A3E5 /* MyDefine.h */,
 			);
 			name = Library;
 			sourceTree = "<group>";
@@ -348,8 +356,13 @@
 		BA8DB9271573557900E477A2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = wHITEgODDESS;
+				TargetAttributes = {
+					BA8DB92F1573557900E477A2 = {
+						DevelopmentTeam = 46BZU8V549;
+					};
+				};
 			};
 			buildConfigurationList = BA8DB92A1573557900E477A2 /* Build configuration list for PBXProject "KyotoCityBus" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -394,6 +407,7 @@
 				BAAEA4251619587D009E58BF /* shijo_keihan.gif in Resources */,
 				BAAEA4261619587D009E58BF /* shijo_omiya.gif in Resources */,
 				BAAEA42916195955009E58BF /* avanti.png in Resources */,
+				BA2FBC1919E8E29B00536D34 /* Images.xcassets in Resources */,
 				BAAEA42B16195968009E58BF /* ginkaku.png in Resources */,
 				BAAEA42D16195977009E58BF /* kawaramachi_imadegawa.png in Resources */,
 				BAAEA42F16195A56009E58BF /* gion.png in Resources */,
@@ -402,6 +416,7 @@
 				BAD4F64916523E02008F0AC2 /* Default.png in Resources */,
 				BAD0477416524003002771AE /* Icon.png in Resources */,
 				BAD0477516524003002771AE /* Icon@2x.png in Resources */,
+				BA2FBC1B19E8E3CB00536D34 /* Default-568h@4x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,12 +474,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -472,10 +495,15 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 			};
@@ -485,16 +513,28 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
@@ -505,11 +545,18 @@
 		BA8DB9521573557A00E477A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KyotoCityBus/KyotoCityBus-Prefix.pch";
 				INFOPLIST_FILE = "KyotoCityBus/KyotoCityBus-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
@@ -518,11 +565,18 @@
 		BA8DB9531573557A00E477A2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KyotoCityBus/KyotoCityBus-Prefix.pch";
 				INFOPLIST_FILE = "KyotoCityBus/KyotoCityBus-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};

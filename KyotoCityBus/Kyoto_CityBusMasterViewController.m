@@ -3,9 +3,9 @@
 //  KyotoCityBus
 //
 //  Created by 武村 健二 on 12/05/28.
-//  Copyright (c) 2012 wHITEgODDESS. All rights reserved.
+//  Copyright (c) 2012(2014) wHITEgODDESS. All rights reserved.
 //
-
+#import "MyDefine.h"
 #import "Kyoto_CityBusMasterViewController.h"
 #import "pickupDataInHTML.h"
 #import "pickupBus.h"
@@ -99,7 +99,8 @@
         
         PickupBus *pickupBusAtIndex = [self.dataController objectInListAtIndex:n -1];
     
-        NSString *title = [NSString stringWithFormat:@"%@ : %@",pickupBusAtIndex.no, pickupBusAtIndex.destName];
+        // NSString *title = [NSString stringWithFormat:@"%@ : %@",pickupBusAtIndex.no, pickupBusAtIndex.destName]; // changed:2014/04/20
+        NSString *title = [NSString stringWithFormat:@"%@", pickupBusAtIndex.destName];
         [[cell textLabel] setText:title];
         [[cell detailTextLabel] setText:pickupBusAtIndex.subName];
         // cell.userInteractionEnabled = YES;
@@ -266,6 +267,8 @@
 {
     [self.receivedURL setLength:0];
     
+    LOG("START %@", (url.path) );
+    
     self.requestURL = [NSURLRequest requestWithURL:url cachePolicy:NSURLRequestReloadIgnoringCacheData timeoutInterval:60.0];
     if( self.requestURL == nil ) goto END_REQUESTURL;
     self.connectionURL = [[NSURLConnection alloc] initWithRequest:self.requestURL delegate:self];
@@ -280,12 +283,15 @@
         self.waitView.hidden = NO;
         [self.waitView setNeedsDisplay];
         
+        LOG("END::YES %@", url.path );
         return YES;
     }
     
     
 END_REQUESTURL:
     self.busStop.enabled = YES;
+    
+    LOG("END::NO  %@", url.path );
     
     return NO;
 }
@@ -350,6 +356,8 @@ END_REQUESTURL:
     
     range = NSMakeRange(0, length);
     
+    LOG( @"START" );
+    
     foundResult = [dataString rangeOfString:@"<div id=\"ires\">"];
     if( foundResult.location == NSNotFound )
         return NO;
@@ -382,6 +390,9 @@ END_REQUESTURL:
     }
     returnRange->location = NSMaxRange(foundResult);
     returnRange->length = length -NSMaxRange(foundResult);
+    
+    
+    LOG( @"END" );
     
     return YES;
 }
@@ -457,6 +468,7 @@ END_REQUESTURL:
 {
     char buffer[64], i;
     
+    LOG("START");
     [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
     
     // do something with the data
@@ -473,7 +485,7 @@ END_REQUESTURL:
             return;
         }
         
-        foundResult = [dataString rangeOfString:@"http://www.city.kyoto.jp/kotsu/busdia/hyperdia/menu" options:NSLiteralSearch range:foundResult];
+        foundResult = [dataString rangeOfString:@"https://www.city.kyoto.jp/kotsu/busdia/hyperdia/menu" options:NSLiteralSearch range:foundResult];
         if( foundResult.location != NSNotFound )
         {
             foundResult.length += 10;
@@ -512,13 +524,18 @@ END_REQUESTURL:
             [[self tableView] reloadData];
             [self pickupBusStopName:dataString];
             if( self.hasNote == YES )
-                [self.dataController addNoteDataFromBusstop:self.busStop.text];
+            {
+                NSLog(@"*** %s:%d *** Stop!! addNoteDataFromBusstop:%@",__FILE__,__LINE__,self.busStop.text );
+                // [self.dataController addNoteDataFromBusstop:self.busStop.text];
+            }
         }
         self.waitView.hidden = YES;
         [self.waitView setNeedsDisplay];
 
         self.busStop.enabled = YES;
     }
+    
+    LOG("END");
 }
 
 #pragma mark -- Action
@@ -532,6 +549,8 @@ END_REQUESTURL:
         [self checkingNetworkConnection];
         if( checkingConnection == NO ) return;
     }*/
+    
+    LOG("START");
     
     if( [self.busStop.text length] < 1 )
     {
@@ -566,7 +585,7 @@ END_REQUESTURL:
         else
         {
             selectedBusstopName = YES;
-            self.found = [mbss.found sortedArrayUsingSelector:@selector(caseInsensitiveCompare:)];
+            self.found = [NSMutableArray arrayWithArray:[mbss.found sortedArrayUsingSelector:@selector(caseInsensitiveCompare:)]];
 
             [self.tableView reloadData];
             self.busStop.enabled = YES;
@@ -581,12 +600,16 @@ END_REQUESTURL:
     }
     NSURL *url = [NSURL URLWithString:[baseString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
     [self requestToURL:url];
+    
+    LOG("END");
 }
 
 #pragma mark -- Segue
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{    
+{
+    LOG("START, %@", [segue identifier] );
+    
     if ([[segue identifier] isEqualToString:@"Segue_TimeTable"]) 
     {
         NSIndexPath *selectedRowIndex = [self.tableView indexPathForSelectedRow];
@@ -597,7 +620,8 @@ END_REQUESTURL:
         Kyoto_CityBusTimeTableController *controller = [segue destinationViewController];
         
         controller.busInfo = self.searchedBusStop;
-        controller.title = [NSString stringWithFormat:@"%@ : %@",pickupBusAtIndex.no, pickupBusAtIndex.destName];
+        // controller.title = [NSString stringWithFormat:@"%@ : %@",pickupBusAtIndex.no, pickupBusAtIndex.destName]; changed:2014/04/20
+        controller.title = [NSString stringWithFormat:@"%@", pickupBusAtIndex.destName];
         controller.busstopNote.enabled = self.hasNote;
         if( self.hasNote == YES )
         {
@@ -622,6 +646,8 @@ END_REQUESTURL:
         else */
             [controller requestToURL:url];
     }
+    
+    LOG("END, %@", [segue identifier] );
 }
 
 @end

@@ -5,7 +5,7 @@
 //  Created by 武村 健二 on 12/07/06.
 //  Copyright (c) 2012 wHITEgODDESS. All rights reserved.
 //
-
+#import "MyDefine.h"
 #import "Kyoto_CityBusTimeTableController.h"
 #import "MyWaitView.h"
 #import "PickupTimeTable.h"
@@ -101,6 +101,8 @@
 {
     [self.receivedURL setLength:0];
     
+    LOG("START, %@", url );
+    
     self.requestURL = [NSURLRequest requestWithURL:url cachePolicy:NSURLRequestReloadIgnoringCacheData timeoutInterval:60.0];
     if( self.requestURL == nil ) goto END_REQUESTURL;
     self.connectionURL = [[NSURLConnection alloc] initWithRequest:self.requestURL delegate:self];
@@ -121,6 +123,9 @@
 END_REQUESTURL:
     
     self.downloading = NO;
+    
+    
+    LOG("END, %@", self.downloading );
 }
 
 
@@ -138,7 +143,7 @@ END_REQUESTURL:
     
     // do something with the data
     // receivedData is declared as a method instance elsewhere
-    NSLog(@"Succeeded! Received %d bytes of data",[self.receivedURL length]);
+    LOG(@"Succeeded! Received %d bytes of data",[self.receivedURL length]);
    
     NSString *dataString = nil;
     dataString = [[NSString alloc] initWithData:self.receivedURL encoding:NSShiftJISStringEncoding];
